@@ -205,34 +205,60 @@ nav button {
 }
 
 .post__author {
-    display: flex;
-    gap: 1rem;
-    margin-top: 1.2rem;
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.2rem;
 }
 
 .post__author-avatar {
-    width: 2.5rem;
-    aspect-ratio: 1/1;
-    border-radius: var(--card-border-radius-3);
-    overflow: hidden; 
+  width: 2.5rem;
+  aspect-ratio: 1/1;
+  border-radius: var(--card-border-radius-3);
+  overflow: hidden;
 }
 
 /* =========== FEATURED ============== */
 .featured {
-    margin-top: 8rem;
+  margin-top: 8rem;
 }
 
 .featured__container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
 }
 
 .featured .post__thumbnail {
-    height: fit-content;
+  height: fit-content;
 }
 
 .featured .post__title {
-    margin-top: 0.9rem;
-    margin-bottom: 0.9rem;
+  margin-top: 0.9rem;
+  margin-bottom: 0.9rem;
+}
+
+/* ================== posts ============== */
+.post__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem;
+  margin-bottom: 4rem;
+}
+
+.posts .post__info .post__title {
+  margin-top: 0.9rem;
+}
+
+/* =================== CATEGORY BUTTONS ==================== */
+.category__buttons {
+  padding: 4rem 0;
+  border-top: 2px solid var(--color-gray-300);
+  border-bottom: 2px solid var(--color-gray-300);
+}
+
+.category__buttons-container {
+  width: fit-content;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
 }
