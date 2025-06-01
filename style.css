@@ -69,7 +69,7 @@ h5 {
 }
 
 h1 {
-  font-size: 1rem;
+  font-size: 3rem;
   margin: 1rem 0;
 }
 
@@ -408,6 +408,14 @@ footer ul li {
   color: var(--color-gray-900);
 }
 
+/* ============================== EMPTY PAGES ============================== */
+
+.empty__page {
+  height: 70vh;
+  display: grid;
+  place-content: center;
+}
+
 /* ========================================= MEDIA QUERIES ===================================== */
 @media screen and (max-width: 1024px) {
   .container {
@@ -546,131 +554,3 @@ footer ul li {
     padding: 0 1rem;
   }
 }
-
-/* =========================== ABOUT PAGE STYLES --------------------------- */
-
-.about-main {
-  display: flex;
-  flex-direction: column;
-  gap: 2.5rem;
-}
-
-.about-hero {
-  text-align: center;
-}
-
-.about-hero h1 {
-  font-size: 2.3rem;
-  margin-bottom: 1.2rem;
-  color: var(--color-primary-variant);
-  letter-spacing: 1px;
-}
-
-.about-hero p {
-  font-size: 1.15rem;
-  color: var(--color-gray-700);
-  max-width: 700px;
-  margin: 0 auto;
-  line-height: 1.7;
-}
-
-.about-team {
-  text-align: center;
-}
-
-.about-team h2 {
-  margin-bottom: 1.2rem;
-  color: var(--color-primary-variant);
-  font-size: 1.5rem;
-}
-
-.about-team-list {
-  display: flex;
-  gap: 2.5rem;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.about-team-member {
-  background: var(--color-bg);
-  border-radius: var(--card-border-radius-2);
-  padding: 1.5rem 1rem;
-  text-align: center;
-  width: 200px;
-  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.05);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  transition: box-shadow 0.3s;
-}
-
-.about-team-member:hover {
-  box-shadow: 0 4px 24px rgba(84, 199, 84, 0.15);
-}
-
-.about-team-member img {
-  width: 90px;
-  height: 90px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 0.7rem;
-  border: 3px solid var(--color-primary);
-}
-
-.about-team-member h3 {
-  margin-bottom: 0.3rem;
-  font-size: 1.15rem;
-  color: var(--color-gray-900);
-}
-
-.about-team-member p {
-  color: var(--color-gray-700);
-  font-size: 1rem;
-}
-
-.about-mission {
-  text-align: center;
-}
-
-.about-mission h2 {
-  margin-bottom: 1rem;
-  color: var(--color-primary-variant);
-  font-size: 1.5rem;
-}
-
-.about-mission p {
-  color: var(--color-gray-700);
-  font-size: 1.13rem;
-  max-width: 700px;
-  margin: 0 auto;
-  line-height: 1.7;
-}
-
-@media screen and (max-width: 900px) {
-  .about-main {
-    padding: 1.2rem 0.5rem;
-  }
-  .about-team-list {
-    gap: 1.2rem;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  .about-main {
-    padding: 0.5rem 0.2rem;
-  }
-  .about-team-list {
-    flex-direction: column;
-    align-items: center;
-    gap: 1.2rem;
-  }
-  .about-team-member {
-    width: 95%;
-    max-width: 320px;
-  }
-  .about-hero h1 {
-    font-size: 1.5rem;
-  }
-}
-
-/* =========================== END OF ABOUT PAGE STYLES --------------------------- */
