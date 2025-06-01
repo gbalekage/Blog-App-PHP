@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Application with html, css, javascript, php, mysql</title>
+
+    <!-- CSS STYLE SHEET -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- iconscout cdn -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="container nav__container">
+        <a href="index.html" class="nav__logo">BLOG APP</a>
+        <ul class="nav__items">
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="about.html">À propos</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="signin.html">Connexion</a></li>
+          <li class="nav__profile">
+            <div class="avatar">
+              <img src="./images/avatar2.jpg" alt="" />
+            </div>
+            <ul>
+              <li><a href="dashboard.html">Tableau de bord</a></li>
+              <li><a href="logout.html">Déconnexion</a></li>
+            </ul>
+          </li>
+        </ul>
+        <button id="open__nav-btn"><i class="uil uil-bars"></i></button>
+        <button id="close__nav-btn"><i class="uil uil-multiply"></i></button>
+      </div>
+    </nav>
+
+    <main class="about-main">
+      <section class="about-hero">
+        <h1>À propos de nous</h1>
+        <p>
+          Bienvenue sur notre blog ! Nous sommes passionnés par le partage
+          d'articles sur la vie sauvage, les voyages, la nourriture, la musique,
+          les films, la technologie et la mode. Notre objectif est d'inspirer,
+          d'informer et de connecter les lecteurs à travers des histoires
+          captivantes et des conseils pratiques.
+        </p>
+      </section>
+      <section class="about-team">
+        <h2>Notre équipe</h2>
+        <div class="about-team-list">
+          <div class="about-team-member">
+            <img src="./images/avatar2.jpg" alt="Balekage Gael" />
+            <h3>Balekage Gael</h3>
+            <p>Fondateur & Rédacteur en chef</p>
+          </div>
+          <div class="about-team-member">
+            <img src="./images/avatar1.jpg" alt="Collaborateur" />
+            <h3>Collaborateur</h3>
+            <p>Auteur invité</p>
+          </div>
+        </div>
+      </section>
+      <section class="about-mission">
+        <h2>Notre mission</h2>
+        <p>
+          Nous croyons au pouvoir de l'information et de la communauté. Notre
+          mission est de fournir un contenu de qualité, accessible à tous, et de
+          créer un espace où chacun peut apprendre, partager et s'inspirer.
+        </p>
+      </section>
+    </main>
+
+    <!-- JAVASCRIPT FILES -->
+    <script src="./main.js"></script>
+  </body>
+</html>
